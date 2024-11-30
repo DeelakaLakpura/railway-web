@@ -2,9 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaCalendarAlt, FaGift, FaHeadset, FaPercent, FaCreditCard } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper"; // Import Autoplay module
 import "swiper/css";
-import "swiper/css/autoplay";
 
 const FeatureCard = ({ Icon, title, description }) => {
   return (
@@ -54,7 +52,6 @@ const Features = () => {
   return (
     <section className="py-8 bg-gradient-to-r from-blue-50 to-purple-50">
       <Swiper
-        modules={[Autoplay]} // Register Autoplay
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
@@ -71,7 +68,7 @@ const Features = () => {
         loop={true}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false, // Keeps autoplay running after interaction
+          disableOnInteraction: false,
         }}
         className="px-4"
       >
