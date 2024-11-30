@@ -1,7 +1,7 @@
 import React from "react";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaPhoneAlt, FaInfoCircle } from "react-icons/fa";
-import Lottie from "lottie-react";
+import Lottie from "react-lottie";
 import Container from "../components/Container";
 import contactAnimation from "../raw/contactanimation.json";
 
