@@ -8,6 +8,7 @@ import OurService from './pages/OurServices';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Contact from './pages/ContactUs';
+import BlogPage from './pages/BlogPage';
 
 function App() {
   // Hook to get the current route
@@ -22,6 +23,7 @@ function App() {
         <Route path="ourservice" element={<OurService />} />
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<HeroSlider />} />
+        <Route path="blogs" element={<BlogPage />} />
         <Route path='login' element = {<Login />} />
         <Route path='contact' element = {<Contact />} />
       </Routes>

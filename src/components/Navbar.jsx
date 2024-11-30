@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   const handleNavClick = () => {
-    setMenuOpen(false); // Hide menu on nav item click
+    setMenuOpen(false); 
   };
 
   return (
@@ -40,6 +40,7 @@ const Navbar = () => {
             { icon: FaTrain, label: "OUR SERVICE", path: "/ourservice" },
             { icon: FaBlog, label: "BLOGS", path: "/blogs" },
             { icon: FaPhoneAlt, label: "CONTACT", path: "/contact" },
+            
           ].map((item, index) => (
             <li
               key={index}
