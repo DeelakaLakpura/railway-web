@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaHome, FaInfoCircle, FaTrain, FaBlog, FaPhoneAlt, FaUser } from "react-icons/fa";
+import { FaHome, FaInfoCircle, FaTrain, FaBlog,FaTimes, FaPhoneAlt, FaUser , } from "react-icons/fa";
 import {NavLink } from "react-router-dom";
 
 const Navbar = () => {
