@@ -2,12 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaCalendarAlt, FaGift, FaHeadset, FaPercent, FaCreditCard } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper"; // Import Autoplay module
 import "swiper/css";
 
 const FeatureCard = ({ Icon, title, description }) => {
   return (
     <motion.div
-      className="flex flex-col items-center text-center   p-6 m-4 transition-transform transform hover:scale-105"
+      className="flex flex-col items-center text-center p-6 m-4 transition-transform transform hover:scale-105"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
@@ -50,8 +51,9 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-8 bg-gradient-to-r from-blue-50 to-purple-50 ">
+    <section className="py-8 bg-gradient-to-r from-blue-50 to-purple-50">
       <Swiper
+        modules={[Autoplay]} // Register the Autoplay module
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
@@ -66,7 +68,10 @@ const Features = () => {
           },
         }}
         loop={true}
-        autoplay={{ delay: 2500 }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false, // Keeps autoplay active even after user interaction
+        }}
         className="px-4"
       >
         {features.map((feature, index) => (
