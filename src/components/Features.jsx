@@ -53,7 +53,7 @@ const Features = () => {
   return (
     <section className="py-8 bg-gradient-to-r from-blue-50 to-purple-50">
       <Swiper
-        modules={[Autoplay]} // Register the Autoplay module
+        modules={[Autoplay]} 
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
@@ -69,8 +69,8 @@ const Features = () => {
         }}
         loop={true}
         autoplay={{
-          delay: 2500,
-          disableOnInteraction: false, // Keeps autoplay active even after user interaction
+          delay: 2000,
+          disableOnInteraction: true, 
         }}
         className="px-4"
       >
