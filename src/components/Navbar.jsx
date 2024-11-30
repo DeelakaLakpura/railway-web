@@ -75,7 +75,7 @@ const Navbar = () => {
           </li>
           <li className="flex items-center space-x-2 text-green-300 cursor-pointer">
             <FaTrain />
-            <span>OUR SERVICE</span>
+            <span><NavLink to="/ourservice">OUR SERVICE</NavLink></span>
           </li>
           <li className="flex items-center space-x-2 text-green-300 cursor-pointer">
             <FaBlog />
@@ -88,7 +88,7 @@ const Navbar = () => {
           <li>
             <button className="bg-green-400 text-black px-4 py-2 rounded-md shadow-md hover:bg-green-500 transition duration-300 flex items-center space-x-2">
               <FaUser />
-              <span>LOGIN</span>
+              <span><NavLink to="/login" >LOGIN</NavLink></span>
             </button>
           </li>
         </ul>
