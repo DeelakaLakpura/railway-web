@@ -72,7 +72,6 @@ const Navbar = () => {
         onClick={toggleMenu}
         className="md:hidden text-green-300 text-2xl p-2 focus:outline-none"
       >
-        {menuOpen ? <FaTimes /> : <FaHome />}
       </button>
 
       {/* Mobile Menu */}
