@@ -145,15 +145,17 @@ const ContactUs = () => {
         <h2 className="text-3xl font-bold text-center text-gray-600 mb-5">Our Location</h2>
         <div className="w-full h-96 bg-gray-300 rounded-xl shadow-xl overflow-hidden">
         <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6564279524914!2d79.85764507448283!3d6.931604918287424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2591a5e7013f5%3A0x78dae6d63e1f980f!2sSri%20Lanka%20Railway%20Head%20Quarters!5e0!3m2!1sen!2slk!4v1730613052060!5m2!1sen!2slk"
-      width="100%"
-      height="100%"
-      frameBorder="0"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      aria-hidden="false"
-      tabIndex="0"
-    ></iframe>
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6564279524914!2d79.85764507448283!3d6.931604918287424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2591a5e7013f5%3A0x78dae6d63e1f980f!2sSri%20Lanka%20Railway%20Head%20Quarters!5e0!3m2!1sen!2slk!4v1730613052060!5m2!1sen!2slk"
+  width="100%"
+  height="100%"
+  frameBorder="0"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  aria-hidden="false"
+  tabIndex="0"
+  title="Google Maps - Sri Lanka Railway Head Quarters"
+/>
+
         </div>
       </div>
 
