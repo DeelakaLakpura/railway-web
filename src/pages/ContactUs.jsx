@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPhoneAlt,FaInfo, FaSearchLocation, FaMap } from "react-icons/fa";
+import { FaPhoneAlt,FaInfo, FaMap } from "react-icons/fa";
 import Lottie from "react-lottie";
 import { motion } from "framer-motion";
 import animationData from "../raw/contactanimation.json"; 
