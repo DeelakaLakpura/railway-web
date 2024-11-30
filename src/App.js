@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import OurService from './pages/OurServices';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Contact from './pages/ContactUs';
 
 function App() {
   // Hook to get the current route
@@ -22,6 +23,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<HeroSlider />} />
         <Route path='login' element = {<Login />} />
+        <Route path='contact' element = {<Contact />} />
       </Routes>
       {/* Show Features only on the home page */}
       {location.pathname === '/' && <Features />}
