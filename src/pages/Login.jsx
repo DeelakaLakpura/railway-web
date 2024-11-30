@@ -155,7 +155,7 @@ const App = () => {
               {/* Forgot Password Link */}
               {!isSignup && (
                 <div className="text-center mt-4">
-                  <a href="#" className="text-green-500 hover:text-green-600">
+                  <a href="/home" className="text-green-500 hover:text-green-600">
                     Forgot your password?
                   </a>
                 </div>
