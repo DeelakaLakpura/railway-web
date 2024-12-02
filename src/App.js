@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Contact from './pages/ContactUs';
 import BlogPage from './pages/BlogPage';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   // Hook to get the current route
@@ -26,8 +27,8 @@ function App() {
         <Route path="blogs" element={<BlogPage />} />
         <Route path='login' element = {<Login />} />
         <Route path='contact' element = {<Contact />} />
+        <Route path='about' element = {<AboutUs />} />
       </Routes>
-      {/* Show Features only on the home page */}
       {location.pathname === '/' && <Features />}
       <Footer />
     </div>

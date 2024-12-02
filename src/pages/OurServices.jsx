@@ -56,7 +56,6 @@ const services = [
 const OurServices = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-50 to-purple-50 relative text-white">
-      {/* Header Section */}
       <header className="py-12 bg-gradient-to-br from-gray-800 to-gray-900 text-center shadow-lg relative">
         <h1 className="text-5xl font-extrabold tracking-wide text-white">Our Services</h1>
         <p className="text-lg mt-3 max-w-2xl mx-auto opacity-90">
