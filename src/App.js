@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Contact from './pages/ContactUs';
 import BlogPage from './pages/BlogPage';
 import AboutUs from './pages/AboutUs';
+import Tickets from './pages/Tickets';
 
 function App() {
   // Hook to get the current route
@@ -20,7 +21,6 @@ function App() {
       <Navbar />
       
       <Routes>
-        {/* Define routes for pages */}
         <Route path="ourservice" element={<OurService />} />
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<HeroSlider />} />
@@ -28,6 +28,7 @@ function App() {
         <Route path='login' element = {<Login />} />
         <Route path='contact' element = {<Contact />} />
         <Route path='about' element = {<AboutUs />} />
+        <Route path='tickets' element = {<Tickets />} />
       </Routes>
       {location.pathname === '/' && <Features />}
       <Footer />

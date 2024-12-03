@@ -13,7 +13,7 @@ const services = [
     icon: <FaTicketAlt />,
     title: "Ticket Booking",
     description: "Book tickets for your journey with ease.",
-    link: "/ticket-booking",
+    link: "/tickets",
     buttonText: "Book Tickets",
   },
   {
