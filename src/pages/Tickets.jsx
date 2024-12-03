@@ -117,8 +117,8 @@ const Ticket = () => {
        
         </p>
       </header>
-      <div className="min-h-screen bg-gray-100 mt-4 flex flex-col items-center p-6">
-      <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6">
+      <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
+      <div className="w-full max-w-4xl bg-white mt-6 rounded-lg shadow-lg p-6">
 
         <div className="flex justify-center mb-6">
           <button
