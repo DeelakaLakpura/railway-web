@@ -13,14 +13,26 @@ import mainbanner4 from "../images/homebanner/mian_banner_04.jpg";
 const HeroSlider = () => {
   const slides = [
     {
-      title: "Book Your Sri Lanka Railway Journey Online!",
+    
+      title: (
+        <>
+        Book Your Sri Lanka Railway  <br />
+        <span className="text-green-600">Journey Online!</span>
+      </>
+      ),
       description:
         "Travel through the heart of Sri Lanka with ease. Reserve your seat in just a few clicks!",
       buttonText: "Book Now",
       imageUrl: mainbanner1,
     },
     {
-      title: "Save More with Season Tickets",
+     
+      title: (
+        <>
+          Save More with Season <br />
+          <span className="text-green-600">Tickets</span>
+        </>
+      ), 
       description:
         "Get unlimited travel on your favorite routes. Enjoy the convenience and cost savings with a season ticket.",
       buttonText: "Book Now",
