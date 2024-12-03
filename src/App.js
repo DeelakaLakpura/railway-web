@@ -11,6 +11,7 @@ import Contact from './pages/ContactUs';
 import BlogPage from './pages/BlogPage';
 import AboutUs from './pages/AboutUs';
 import Tickets from './pages/Tickets';
+import PaymentPage from './pages/Payment';
 
 function App() {
   // Hook to get the current route
@@ -29,6 +30,8 @@ function App() {
         <Route path='contact' element = {<Contact />} />
         <Route path='about' element = {<AboutUs />} />
         <Route path='tickets' element = {<Tickets />} />
+        <Route path="/payment" element={<PaymentPage />} />
+
       </Routes>
       {location.pathname === '/' && <Features />}
       <Footer />
