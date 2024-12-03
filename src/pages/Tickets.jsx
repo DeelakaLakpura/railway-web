@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Ticket = () => {
   const [activeTab, setActiveTab] = useState("general");
@@ -14,6 +15,7 @@ const Ticket = () => {
     passengers: 1,
     class: "Second Class",
     price: 0,
+    
   });
 
   const [warrantFormData, setWarrantFormData] = useState({
@@ -33,6 +35,8 @@ const Ticket = () => {
     journeyDate: "",
     passengers: 1,
   });
+
+
 
   const handleTabSwitch = (tab) => setActiveTab(tab);
 
@@ -57,14 +61,34 @@ const Ticket = () => {
     if (generalFormData.returnTrip) totalPrice *= 2;
     return totalPrice;
   };
+  const navigate = useNavigate();
 
   const handleGeneralSubmit = (e) => {
     e.preventDefault();
     const totalPrice = calculatePrice();
-    setGeneralFormData({ ...generalFormData, price: totalPrice });
+    
+    // Update the generalFormData locally before navigation
+    const updatedFormData = {
+      ...generalFormData,
+      price: totalPrice,
+      mobileNumber: "+94" + generalFormData.mobileNumber,
+      from: generalFormData.from,
+      to: generalFormData.to,
+      date: generalFormData.date,
+      journeyTime: generalFormData.journeyTime,
+      returnTrip: generalFormData.returnTrip,
+      returnDate: generalFormData.returnDate,
+      passengers: generalFormData.passengers,
+      class: generalFormData.class,
+    };
+  
+    // Show the alert with updated totalPrice
     alert(`Booking Successful! Total Price: Rs.${totalPrice}`);
+  
+    // Navigate with the updated form data
+    navigate("/payment", { state: { generalFormData: updatedFormData } });
   };
-
+  
   const handleGeneralReset = () => {
     setGeneralFormData({
       NIC: "",
@@ -337,7 +361,9 @@ const Ticket = () => {
           >
             {/* Form content for Warrant Passenger */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Add all required inputs similar to the General form */}
+              
+               
+
             </div>
 
             {/* Actions */}
