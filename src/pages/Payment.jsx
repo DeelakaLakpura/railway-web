@@ -2,10 +2,10 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { FaArrowRight, FaTicketAlt, FaCalendarAlt, FaUsers, FaIdCard, FaPhoneAlt,  FaUserFriends } from 'react-icons/fa'; // Import icons
+import { FaArrowRight, FaTicketAlt, FaCalendarAlt, FaUsers, FaIdCard, FaPhoneAlt, FaUserFriends } from 'react-icons/fa'; // Import icons
 
 const PaymentPage = () => {
-    const { state } = useLocation(); // Receive the submitted form data via React Router state
+    const { state } = useLocation(); 
   
     if (!state) {
         return <div className="text-center text-lg text-gray-600">No data found!</div>;
