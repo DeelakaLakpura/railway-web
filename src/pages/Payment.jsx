@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { FaArrowRight, FaTicketAlt, FaCalendarAlt, FaUsers, FaIdCard, FaPhoneAlt, FaUserFriends } from 'react-icons/fa'; // Import icons
 
@@ -62,9 +62,9 @@ const PaymentPage = () => {
                         <div><FaUsers className="inline-block mr-2 text-green-600" /><strong>Passengers:</strong> {passengers}</div>
                         <div><strong><FaUserFriends className="inline-block mr-2 text-green-600" />Class:</strong> {classType}</div>
                     </div>
+                    <div className='text-red-600' ><strong>Price:</strong>Rs. {price}</div>
                 </motion.div>
 
-                {/* Payment Section */}
                 <motion.div
                     className="bg-green-50 p-6 rounded-lg shadow-xl"
                     initial={{ opacity: 0 }}
