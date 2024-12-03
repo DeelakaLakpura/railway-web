@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { color, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { FaArrowRight, FaTicketAlt, FaCalendarAlt, FaUsers, FaIdCard, FaPhoneAlt, FaUserFriends } from 'react-icons/fa'; // Import icons
 
