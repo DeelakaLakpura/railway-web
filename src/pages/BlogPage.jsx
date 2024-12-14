@@ -72,7 +72,7 @@ const BlogPage = () => {
                 <div key={index} className="mb-6">
                   <motion.div
                     className="relative group cursor-pointer"
-                    onClick={() => openModal(blog)} // Pass the full blog object
+                    onClick={() => openModal(blog)} 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ type: 'spring', stiffness: 300 }}

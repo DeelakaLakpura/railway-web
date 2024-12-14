@@ -82,11 +82,10 @@ const Ticket = () => {
       class: generalFormData.class,
     };
   
-    // Show the alert with updated totalPrice
     alert(`Booking Successful! Total Price: Rs.${totalPrice}`);
   
     // Navigate with the updated form data
-    navigate("/payment", { state: { generalFormData: updatedFormData } });
+    navigate("/generateQR", { state: { generalFormData: updatedFormData } });
   };
   
   const handleGeneralReset = () => {

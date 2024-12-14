@@ -12,9 +12,9 @@ import BlogPage from './pages/BlogPage';
 import AboutUs from './pages/AboutUs';
 import Tickets from './pages/Tickets';
 import PaymentPage from './pages/Payment';
+import GenerateQR from './pages/GenerateQR';
 
 function App() {
-  // Hook to get the current route
   const location = useLocation();
 
   return (
@@ -30,6 +30,7 @@ function App() {
         <Route path='contact' element = {<Contact />} />
         <Route path='about' element = {<AboutUs />} />
         <Route path='tickets' element = {<Tickets />} />
+        <Route path='/generateQR' element={<GenerateQR />} />
         <Route path="/payment" element={<PaymentPage />} />
 
       </Routes>
